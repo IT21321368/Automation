@@ -11,6 +11,14 @@ public class EbayDemo {
 //        Thread.sleep(2000);
         driver.get("https://www.ebay.com/");
 //        Thread.sleep(2000);
+
+        String currentUrl = driver.getCurrentUrl();
+        String currentTitle = driver.getTitle();
+
+        System.out.println("current title = "+currentTitle);
+
+        System.out.println("current url = "+currentUrl);
+
         driver.findElement(By.xpath("//input[@id='gh-ac']")).click();
         driver.findElement(By.xpath("//input[@id='gh-ac']")).clear();
         driver.findElement(By.xpath("//input[@id='gh-ac']")).sendKeys("Iphone");
