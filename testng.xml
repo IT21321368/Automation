@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/QA/MyFirstAutomation/src/test/java/testNG">
+        <classes>
+            <class name="testNG.FirstTestNGAutomation">
+                <methods>
+                    <include name="googleSearch"/>
+                </methods>
+            </class>
+            <class name="testNG.TestngAnnotationTest">
+                <methods>
+                    <include name="test1"/>
+                    <exclude name="test2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
