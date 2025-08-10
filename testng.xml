@@ -1,25 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true"
-          name="D:/QA/MyFirstAutomation/src/test/java/testNG/TestNGGroupTest.java">
-        <groups>
-            <run>
-                <exclude name="smoke"/>
-                <include name="regression"/>
-
-            </run>
-        </groups>
+    <test parallel="methods" thread-count="5" verbose="2" preserve-order="true" name="D:/QA/MyFirstAutomation/src/test/java/testNG">
         <classes>
-            <class name="testNG.TestNGGroupTest">
-<!--                <methods>-->
-<!--                    <include name="test1"/>-->
-<!--                    <include name="test2"/>-->
-<!--                    <include name="test3"/>-->
-<!--                    <include name="test4"/>-->
-<!--                    <include name="test5"/>-->
-<!--                </methods>-->
+            <class name="testNG.TestNGParellelTest">
+                <methods>
+                    <include name="method1"/>
+                    <include name="method2"/>
+                    <include name="method3"/>
+                    <include name="method4"/>
+                    <include name="method5"/>
+                </methods>
             </class>
+
         </classes>
     </test>
 </suite>
