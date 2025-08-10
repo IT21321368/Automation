@@ -11,7 +11,9 @@
             </run>
         </groups>
         <classes>
-            <class name="testNG.TestNGGroupTest">
+<!--            <class name="testNG.TestNGGroupTest">-->
+            <class name="testNG.TestNGPriorityTest">
+
 <!--                <methods>-->
 <!--                    <include name="test1"/>-->
 <!--                    <include name="test2"/>-->
