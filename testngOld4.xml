@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test parallel="methods" thread-count="5" verbose="2" preserve-order="true" name="D:/QA/MyFirstAutomation/src/test/java/testNG">
+        <classes>
+            <class name="testNG.TestNGParellelTest">
+                <methods>
+                    <include name="method1"/>
+                    <include name="method2"/>
+                    <include name="method3"/>
+                    <include name="method4"/>
+                    <include name="method5"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>
